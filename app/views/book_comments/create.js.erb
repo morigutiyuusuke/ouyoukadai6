@@ -1,0 +1,3 @@
+$("#commentOutline").html("<%= j( render partial: "book_comments/comment", locals: { book: @book }) %>")
+$("#inputComment").val('');
+$("#num_of_comments").text("<%= @book.book_comments.count %>");
